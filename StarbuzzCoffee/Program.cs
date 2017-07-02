@@ -1,15 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using StarbuzzCoffee.BeverageImplement;
+using StarbuzzCoffee.CondimentImplement;
 
 namespace StarbuzzCoffee
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            Beverage expresso = new Espresso();
+            Console.WriteLine(expresso);
+
+            Beverage houseBlend = new HouseBlend();
+            Console.WriteLine(houseBlend);
+
+            houseBlend = new Mocha(houseBlend);
+            Console.WriteLine(houseBlend);
+
+            houseBlend = new Soy(houseBlend);
+            Console.WriteLine(houseBlend);
+
+            Beverage darkRoast = new DarkRoast();
+            darkRoast = new CoffeeMate(darkRoast);
+            Console.WriteLine(darkRoast);
+
+            Console.Write("Press any key to exit...");
+            Console.Read();
         }
     }
 }

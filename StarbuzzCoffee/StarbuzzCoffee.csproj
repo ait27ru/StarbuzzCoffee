@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beverage.cs" />
+    <Compile Include="CondimentDecorator.cs" />
+    <Compile Include="BeverageImplement\DarkRoast.cs" />
+    <Compile Include="BeverageImplement\Espresso.cs" />
+    <Compile Include="BeverageImplement\HouseBlend.cs" />
+    <Compile Include="CondimentImplement\CoffeeMate.cs" />
+    <Compile Include="CondimentImplement\Soy.cs" />
+    <Compile Include="CondimentImplement\Mocha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
